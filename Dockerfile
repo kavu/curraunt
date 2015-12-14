@@ -18,6 +18,7 @@ RUN mkdir -p /GOPATH && \
 
 RUN ./scripts/build.sh && cp curraunt /bin
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT [ "/bin/curraunt" ]
+CMD ["-p", "80"]
